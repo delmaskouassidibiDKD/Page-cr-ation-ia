@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@media print {
+  #app-navbar,
+  #pdf-sticky-bar,
+  footer {
+    display: none !important;
+  }
+
+  body, #app-root, #module-pdf {
+    background: white !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  #pdf-pages-stream {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+  .pdf-page {
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 20mm !important;
+    width: 100% !important;
+    min-height: 297mm !important;
+    page-break-after: always !important;
+    break-after: page !important;
+  }
+}
